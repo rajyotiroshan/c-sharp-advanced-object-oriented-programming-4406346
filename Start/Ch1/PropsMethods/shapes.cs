@@ -1,6 +1,8 @@
 // Example file for Advanced C#: Object Oriented Programming by Joe Marini
 // Working with properties and methods
-
+//Notes:Quiz:
+//1. Properties serve as a way to expose a class' data without exposing internal implementation details.
+//2. //What is the proper way to define a read/write property that represents an integer with no backing field? ==> public int MyProp { get; set; }
 // Define a class using the "class" keyword
 class Rectangle {
     // The constructor accepts parameters used to create the object
@@ -37,6 +39,7 @@ class Rectangle {
         }
     }
 
+        
     // TODO: Auto-implmeneted properties don't have a backing field
     public int BorderSize {
         get; set;

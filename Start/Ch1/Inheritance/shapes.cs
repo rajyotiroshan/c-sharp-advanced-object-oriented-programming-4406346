@@ -1,6 +1,7 @@
 // Example file for Advanced C#: Object Oriented Programming by Joe Marini
 // Using inheritance to define a class hierarchy
-
+//Noes:: What is the purpose of the virtual keyword when defining a method?
+  //It indicates that the method can be overridden by subclasses.
 // Define a base class that represents the concept of a 2-dimensional shape
 class Shape2D {
     public Shape2D() {}

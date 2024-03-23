@@ -1,6 +1,7 @@
 // Example file for Advanced C#: Object Oriented Programming by Joe Marini
 // Defining and instantiating classes
-
+//NOTES:: Quiz:: What is the name of the class that all other classes in .NET eventually derive from?
+ // Ans:: object
 // TODO: Define a class using the "class" keyword
 class Rectangle {
     // TODO: The constructor accepts parameters used to create the object
