@@ -1,7 +1,14 @@
 // Example file for Advanced C#: Object Oriented Programming by Joe Marini
+//Notes
+//public: any parts of pro code.
+//protected:: Class itdself or its sub class
+//private:: only inside class.
+//
 
 public class MyClass {
-    public MyClass() {}
+    public MyClass() {
+
+    }
 
     // public members can be accessed from any other class
     public void Func1() {
@@ -31,5 +38,8 @@ public class DerivedClass : MyClass {
     public void Func3() {
         Console.WriteLine("This is Func3");
         // TODO: Func2 can be accessed because this is a subclass of MyClass
+
+        base.Func2();
+        
     }
 }
