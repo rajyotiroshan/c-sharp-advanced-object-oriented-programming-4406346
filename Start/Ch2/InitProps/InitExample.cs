@@ -1,8 +1,8 @@
 // Example file for Advanced C#: Object Oriented Programming by Joe Marini
-// init-only modifier
-
+// init-only modifier after c#9
+//not modifible daa property
 public class Employee {
-    private int _id;
+    private readonly int _id;
 
     public Employee() {}
 
@@ -16,7 +16,7 @@ public class Employee {
     // The init keyword means that a value is assigned only during construction
     public int ID {
         get => _id;
-        set => _id = value;
+        init => _id = value;
     }
     public string? Department {
         get; set;
@@ -27,6 +27,8 @@ public class Employee {
     public string? LastName {
         get; set;
     }
-
+// public void changeID(int NewID){
+    // ID = NewID
+// } //Error
     public override string ToString() => $"{FirstName} {LastName}, ID:{ID} in {Department}";
 }
